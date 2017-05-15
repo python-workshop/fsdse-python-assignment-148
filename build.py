@@ -1,6 +1,6 @@
 from collections import deque
 
-def path_exists(start, end):
+def build(start, end):
     if start is None or end is None:
         return False
     if start is end:
@@ -18,5 +18,5 @@ def path_exists(start, end):
                 adj_node.visit_state = State.visited
     return False
 
-val = path_exists(1,2)
+val = build(1, 2)
 print(val)
